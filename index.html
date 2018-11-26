@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rover</title>
+ 
+  <link rel = "stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id = "mars"> 
+    Sorry, your browser does not support canvas.
+  </canvas>
+  <div class="side-panel">
+    <div class="controls-panel">
+    <h2>Command Central</h2>
+    <form id="form">
+      <input data-key="76" class="button medium-button" type="button" value="Turn Left ('L')" onclick="turnLeft(rover)">
+      <input data-key="70" class="button medium-button" type="button" value="Move Forward ('F')" onclick="moveForward(rover)">
+      <input data-key="82" class="button medium-button" type="button" value="Turn Right ('R')" onclick="turnRight(rover)">
+      <input data-key="66" class="button medium-button" type="button" value="Move Backward ('B')" onclick="moveBackward(rover)">
+    </form>
+  </div>
+  <div class="New Rovers">
+      <h2>New Rovers</h2>
+      <input data-key="78" class="button medium-button" type="button" value="Create New Rover ('N')" onclick="createCompRover()">
+  </div>
+  </div>
+   <div class="clearfix"></div>
+  <script src="app.js"></script>
+</body>
+</html>
